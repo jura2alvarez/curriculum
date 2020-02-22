@@ -124,12 +124,34 @@ a:active {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#postitblue {
+    border-color: #3390bb;
+    background-color: #78cff8 !important;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin-block-start: 15%;
+    margin-left: 7%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#postitheaderblue {
+    background-color: #53c3f7 !important;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 #pie {
     padding-bottom: 0%;
 }
 
 .fa-thumbtack {
     color: red;
+
+}
+
+.fa-thumbtackblue {
+    color: #1c5772;
 
 }
 
@@ -229,6 +251,8 @@ body {
 .right {
     left: 50%;
 }
+
+
 
 /* Add arrows to the left container (pointing right) */
 .left::before {
@@ -364,15 +388,11 @@ body {
 
 
 /*-- PRUEBA ANIMADA */
-
-
-
-
 /*- El color del cielo es #8ec1d9    -*/
 .animate {
-    background-image: url('/images/clouds.png');
-    background-position: -400px 10px;
-    background-repeat: no-repeat;
+    background-image: url('/images/naruto.gif'), url('/images/goku.gif'), url('/images/clouds.png');
+    background-position: 100px 300px, 100px 300px, -400px 10px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     animation: animated 4s linear infinite;
     -webkit-animation: animated 32s linear infinite;
     width: 100%;
@@ -384,30 +404,64 @@ body {
 
 @keyframes animated {
     0% {
-        background-position: 0 0;
+        background-position: -100px 200px, -100px 50px, 0 0;
+    }
+
+    5% {
+        background-position: 5% 200px, 10% 80px, 5% 0;
+    }
+
+    10% {
+        background-position: 10% 200px, 20% 50px, 10% 0;
+    }
+
+    15% {
+        background-position: 15% 200px, 30% 80px, 15% 0;
+    }
+
+    20% {
+        background-position: 20% 200px, 40% 50px, 20% 0;
+    }
+
+    25% {
+        background-position: 25% 200px, 50% 80px, 25% 0;
+    }
+
+    30% {
+        background-position: 30% 200px, 55% 50px, 30% 0;
+    }
+
+    35% {
+        background-position: 35% 200px, 60% 80px, 35% 0;
+    }
+
+    40% {
+        background-position: 40% 200px, 70% 50px, 40% 0;
+    }
+
+    45% {
+        background-position: 45% 200px, 80% 80px, 45% 0;
     }
 
     50% {
-        background-position: 50% 0;
+        background-position: 50% 200px, 85% 50px, 50% 0;
+    }
+
+    51% {
+        background-position: 51% 150px, 86% 50px, 51% 0;
+    }
+
+    52% {
+        background-position: 52% 200px, 87% 50px, 52% 0;
+    }
+
+    60% {
+        background-position: 60% 200px, 90% 50px, 60% 0;
     }
 
     100% {
-        background-position: 100% 0;
+        background-position: 120% 200px, 140% 0px, 100% 0;
     }
 }
 
-@-webkit-keyframes animated {
-
-    0% {
-        background-position: 100px 120px, -400px 10px, 0 0;
-    }
-
-    50% {
-        background-position: 100px 100px, -400px 10px, 50% 0;
-    }
-
-    100% {
-        background-position: 100px 120px, 700px 10px, 100% 0;
-    }
-
-}
+/* FIN ANIMACION */
